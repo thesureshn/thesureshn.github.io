@@ -1,0 +1,173 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background: #f4f4f9;
+}
+
+header {
+    background: #0077b6;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.profile-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.profile-img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.profile-name {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.profile-title {
+    font-size: 1.2rem;
+    margin: 5px 0 20px 0;
+}
+
+.nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.nav ul li {
+    display: inline;
+}
+
+.nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.nav ul li a:hover {
+    background: #0096c7;
+}
+
+.content {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.tab-content {
+    display: none;
+    animation: fadeIn 0.5s;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.about-me, .education, .experience, .research-section, .publications, .miscellaneous, .contact {
+    margin-bottom: 20px;
+}
+
+.carousel-container {
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-slide {
+    display: flex; /* Use flexbox to arrange slides horizontally */
+    transition: transform 0.5s ease; /* Add transition for smooth sliding */
+}
+
+.carousel-slide img {
+    flex: 0 0 auto; /* Ensure each image has fixed width and height */
+    width: 100%; /* Ensure images fill the container width */
+    object-fit: cover; /* Ensure images maintain aspect ratio */
+}
+
+#prevBtn, #nextBtn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+#prevBtn {
+    left: 10px;
+}
+
+#nextBtn {
+    right: 10px;
+}
+
+.about-details {
+    list-style: none;
+    padding: 0;
+}
+
+.about-details li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    background: #0077b6;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #0096c7;
+}
+/* CSS for Footer */
+.footer {
+    position: fixed; /* Position fixed to stick at the bottom of the viewport */
+    bottom: 0; /* Stick to the bottom */
+    width: 100%; /* Full width */
+    background-color: #333; /* Background color */
+    color: #fff; /* Text color */
+    text-align: center; /* Center align text */
+    padding: 5px 0; /* Padding for content */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    font-size: 14px; /* Adjust font size */
+}
+
+.content {
+    margin-bottom: 200px; /* Add margin bottom to content to accommodate footer */
+}
+
