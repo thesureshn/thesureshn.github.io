@@ -171,3 +171,43 @@ header {
     margin-bottom: 200px; /* Add margin bottom to content to accommodate footer */
 }
 
+
+/* Media queries for mobile devices */
+@media only screen and (max-width: 600px) {
+    /* Adjust header */
+    .header {
+        padding: 10px;
+    }
+    .nav {
+        padding: 10px 0;
+    }
+    .nav ul {
+        flex-direction: column;
+    }
+    .nav li {
+        margin-bottom: 5px;
+    }
+    /* Adjust profile image */
+    .profile-img {
+        width: 100px; /* Adjust as needed */
+        height: 100px; /* Adjust as needed */
+    }
+    /* Adjust main content */
+    .content {
+        padding: 10px;
+    }
+    /* Adjust footer */
+    .footer {
+        padding: 10px;
+    }
+    /* Adjust carousel */
+    .carousel-container {
+        width: 100%;
+        overflow-x: scroll;
+        white-space: nowrap;
+    }
+    .carousel-slide {
+        display: inline-block;
+    }
+}
+
